@@ -1,0 +1,33 @@
+server:  
+  port: 7005
+ 
+spring:
+    application:
+        name: claim
+    datasource:
+        url: jdbc:mysql://localhost:3306/proyecto?useUnicode=true&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        username: yadiel
+        password: Proyectopr8!
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: mysql
+        show-sql: false
+        hibernate:
+          ddl-auto: update
+
+pdf:
+  folder:
+    path: /home/dayli/xml
+
+microservice:
+  title: Arawak - Claims API
+  description: Microservice for managment claims over resources.
+  version: 0.1
+  termsOfServiceUrl: Legal use
+  contact:
+      name: Caribbean Open Institute
+      website: http://mysite.com
+      email: caribbean.tour.platform@gmail.com
+  license:
+      name: GPL
+      website: https://www.gnu.org/licenses/licenses.es.html
